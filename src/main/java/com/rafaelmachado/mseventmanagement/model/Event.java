@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Data                     // Gera getters, setters, toString, equals e hashCode
 @NoArgsConstructor        // Cria um construtor sem argumentos
 @AllArgsConstructor       // Cria um construtor com todos os argumentos
@@ -15,7 +17,7 @@ public class Event {
     @Id
     private String id;
     private String eventName;
-    private String dateTime;
+    private LocalDateTime dateTime;
     private String cep;
     private String logradouro;
     private String bairro;

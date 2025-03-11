@@ -1,13 +1,13 @@
 package com.rafaelmachado.mseventmanagement.controller;
 
-import com.rafaelmachado.mseventmanagement.model.Event;
+import com.rafaelmachado.mseventmanagement.dto.EventRequestDTO;
+import com.rafaelmachado.mseventmanagement.dto.EventResponseDTO;
 import com.rafaelmachado.mseventmanagement.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/br/com/compass/eventmanagement/v1")
@@ -17,41 +17,41 @@ public class EventController {
     private EventService eventService;
 
     @PostMapping("/create-event")
-    public ResponseEntity<Event> createEvent(@RequestBody Event event) {
-        Event createdEvent = eventService.createEvent(event);
+    public ResponseEntity<EventResponseDTO> createEvent(@RequestBody EventRequestDTO eventRequest) {
+        EventResponseDTO createdEvent = eventService.createEvent(eventRequest);
         return ResponseEntity.ok(createdEvent);
     }
 
     @GetMapping("/get-event/{id}")
-    public ResponseEntity<Event> getEventById(@PathVariable String id) {
-        Optional<Event> event = eventService.getEventById(id);
-        return event.map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+    public ResponseEntity<EventResponseDTO> getEventById(@PathVariable String id) {
+        return eventService.getEventById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/get-all-events")
-    public ResponseEntity<List<Event>> getAllEvents() {
-        List<Event> events = eventService.getAllEvents();
+    public ResponseEntity<List<EventResponseDTO>> getAllEvents() {
+        List<EventResponseDTO> events = eventService.getAllEvents();
         return ResponseEntity.ok(events);
     }
 
     @PutMapping("/update-event/{id}")
-    public ResponseEntity<Event> updateEvent(@PathVariable String id, @RequestBody Event updatedEvent) {
-        try {
-            Event event = eventService.updateEvent(id, updatedEvent);
-            return ResponseEntity.ok(event);
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+    public ResponseEntity<EventResponseDTO> updateEvent(@PathVariable String id, @RequestBody EventRequestDTO eventRequest) {
+        return eventService.updateEvent(id, eventRequest)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/delete-event/{id}")
     public ResponseEntity<Void> deleteEvent(@PathVariable String id) {
-        try {
-            eventService.deleteEvent(id);
-            return ResponseEntity.ok().build();
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+        boolean deleted = eventService.deleteEvent(id);
+        return deleted ? ResponseEntity.ok().build() : ResponseEntity.notFound().build();
     }
+
+    @GetMapping("/get-all-events/sorted")
+    public ResponseEntity<List<EventResponseDTO>> getAllEventsSorted() {
+        List<EventResponseDTO> sortedEvents = eventService.getAllEventsSorted();
+        return ResponseEntity.ok(sortedEvents);
+    }
+
 }
