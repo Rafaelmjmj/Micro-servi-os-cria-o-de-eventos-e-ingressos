@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e344df7-5a1f-4401-af52-9406a0409ab5" name="Changes" comment="Feat: Adição de funcionalidades em todas as classes do projeto">
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/MsTicketManagerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/controller/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/dto/TicketRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/dto/TicketResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/exception/TicketNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/model/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/test/java/com/rafaelmachado/msticketmanager/MsTicketManagerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/MsEventManagementApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/controller/EventController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/dto/EventRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/dto/EventResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/model/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/repository/EventRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/service/EventService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafaelmachado/mseventmanagement/MsEventManagementApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rafaelmjmj&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rafaelmjmj/desafio-03-compass.git&quot;,
+    &quot;accountId&quot;: &quot;74252aef-3133-4d17-a15c-7809bd7f1bf5&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tzzXVsLUPTwREXqY4JPzCSFpDt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.MsEventManagementApplication.executor": "Run",
+    "git-widget-placeholder": "chore/juntando-projetos",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Rafael/IdeaProjects/ms-event-management/ms-ticket-manager/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="MsEventManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ms-event-management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rafaelmachado.mseventmanagement.MsEventManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e344df7-5a1f-4401-af52-9406a0409ab5" name="Changes" comment="" />
+      <created>1741369882717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741369882717</updated>
+      <workItem from="1741369883817" duration="3487000" />
+      <workItem from="1741612366823" duration="2929000" />
+      <workItem from="1741625932604" duration="4789000" />
+      <workItem from="1741650829186" duration="791000" />
+      <workItem from="1741708854145" duration="7321000" />
+      <workItem from="1741721699914" duration="307000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat criando projeto">
+      <option name="closed" value="true" />
+      <created>1741370259527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741370259527</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat criando projeto">
+      <option name="closed" value="true" />
+      <created>1741371418425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741371418425</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat criando projeto">
+      <option name="closed" value="true" />
+      <created>1741371452334</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741371452334</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Feat: implementado EventRepository e Event">
+      <option name="closed" value="true" />
+      <created>1741371666217</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741371666217</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Feat: implementado EventController e EventService&#10;Refactor: Implementado Anotações de Getter, Setter e Construtores na calsse Event">
+      <option name="closed" value="true" />
+      <created>1741618191835</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741618191835</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat: Adição de funcionalidades em todas as classes do projeto">
+      <option name="closed" value="true" />
+      <created>1741713325922</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741713325922</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat criando projeto" />
+    <MESSAGE value="Feat: implementado EventRepository e Event" />
+    <MESSAGE value="Feat: implementado EventController e EventService&#10;Refactor: Implementado Anotações de Getter, Setter e Construtores na calsse Event" />
+    <MESSAGE value="Feat: Adição de funcionalidades em todas as classes do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Adição de funcionalidades em todas as classes do projeto" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
