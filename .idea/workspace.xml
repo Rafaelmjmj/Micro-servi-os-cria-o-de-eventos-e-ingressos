@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e344df7-5a1f-4401-af52-9406a0409ab5" name="Changes" comment="Feat: Adição de funcionalidades em todas as classes do projeto">
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/MsTicketManagerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/controller/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/dto/TicketRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/dto/TicketResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/exception/TicketNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/model/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/repository/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/java/com/rafaelmachado/msticketmanager/service/TicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-ticket-manager/src/test/java/com/rafaelmachado/msticketmanager/MsTicketManagerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/MsEventManagementApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/controller/EventController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/dto/EventRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/dto/EventResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/model/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/repository/EventRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafaelmachado/mseventmanagement/service/EventService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafaelmachado/mseventmanagement/MsEventManagementApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4e344df7-5a1f-4401-af52-9406a0409ab5" name="Changes" comment="chore: juntando dois projetos em apenas uma pasta" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +26,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -109,7 +75,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -145,6 +111,7 @@
       <workItem from="1741650829186" duration="791000" />
       <workItem from="1741708854145" duration="7321000" />
       <workItem from="1741721699914" duration="307000" />
+      <workItem from="1741722015225" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="feat criando projeto">
       <option name="closed" value="true" />
@@ -194,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741713325922</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="chore: juntando dois projetos em apenas uma pasta">
+      <option name="closed" value="true" />
+      <created>1741722051843</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741722051843</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: juntando dois projetos em apenas uma pasta">
+      <option name="closed" value="true" />
+      <created>1741722119470</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741722119470</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,11 +207,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ms-ticket-manager" />
+    </ignored-roots>
     <MESSAGE value="feat criando projeto" />
     <MESSAGE value="Feat: implementado EventRepository e Event" />
     <MESSAGE value="Feat: implementado EventController e EventService&#10;Refactor: Implementado Anotações de Getter, Setter e Construtores na calsse Event" />
     <MESSAGE value="Feat: Adição de funcionalidades em todas as classes do projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: Adição de funcionalidades em todas as classes do projeto" />
+    <MESSAGE value="chore: juntando dois projetos em apenas uma pasta" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: juntando dois projetos em apenas uma pasta" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
