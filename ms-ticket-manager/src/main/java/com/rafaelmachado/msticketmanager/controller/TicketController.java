@@ -4,6 +4,7 @@ import com.rafaelmachado.msticketmanager.dto.TicketRequestDTO;
 import com.rafaelmachado.msticketmanager.dto.TicketResponseDTO;
 import com.rafaelmachado.msticketmanager.service.TicketService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,10 +13,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/tickets")
-@RequiredArgsConstructor
 public class TicketController {
 
     private final TicketService ticketService;
+
+    @Autowired
+    public TicketController(TicketService ticketService) {
+        this.ticketService = ticketService;
+    }
 
     @PostMapping("/create-ticket")
     public ResponseEntity<TicketResponseDTO> createTicket(@RequestBody TicketRequestDTO request) {
