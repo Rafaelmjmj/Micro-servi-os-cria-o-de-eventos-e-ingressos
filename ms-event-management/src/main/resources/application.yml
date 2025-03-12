@@ -16,5 +16,20 @@ feign:
 
 logging:
   level:
-    org.springframework.data.mongodb.core: DEBUG
+    org.springframework:
+      web: DEBUG
+      data.mongodb.core: DEBUG
+    feign: DEBUG
 
+
+# Documentação OpenAPI/Swagger
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+
+# Configuração de comunicação com ms-ticket-manager
+services:
+  ticket-manager:
+    url: http://localhost:8081/api/v1

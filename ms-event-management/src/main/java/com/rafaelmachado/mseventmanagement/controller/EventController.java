@@ -24,8 +24,8 @@ public class EventController {
 
     @GetMapping("/get-event/{id}")
     public ResponseEntity<EventResponseDTO> getEventById(@PathVariable String id) {
-        return eventService.getEventById(id)
-                .map(ResponseEntity::ok)
+        return eventService.getEventById(id) // Corrigido de getEventId para getEventById
+                .map(event -> ResponseEntity.ok(event)) // Correção para evitar erro de ambiguidade
                 .orElse(ResponseEntity.notFound().build());
     }
 
@@ -38,7 +38,7 @@ public class EventController {
     @PutMapping("/update-event/{id}")
     public ResponseEntity<EventResponseDTO> updateEvent(@PathVariable String id, @RequestBody EventRequestDTO eventRequest) {
         return eventService.updateEvent(id, eventRequest)
-                .map(ResponseEntity::ok)
+                .map(event -> ResponseEntity.ok(event)) // Correção para evitar erro de ambiguidade
                 .orElse(ResponseEntity.notFound().build());
     }
 
@@ -53,5 +53,4 @@ public class EventController {
         List<EventResponseDTO> sortedEvents = eventService.getAllEventsSorted();
         return ResponseEntity.ok(sortedEvents);
     }
-
 }
