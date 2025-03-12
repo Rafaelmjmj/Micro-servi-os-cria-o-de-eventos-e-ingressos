@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e344df7-5a1f-4401-af52-9406a0409ab5" name="Changes" comment="chore: juntando dois projetos em apenas uma pasta" />
+    <list default="true" id="4e344df7-5a1f-4401-af52-9406a0409ab5" name="Changes" comment="chore: modificando nome da pasta para o mesmo nome do modulo">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="chore/juntando-projetos" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.MsEventManagementApplication.executor": "Run",
-    "git-widget-placeholder": "chore/juntando-projetos",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Rafael/IdeaProjects/ms-event-management/ms-ticket-manager/pom.xml",
     "node.js.detected.package.eslint": "true",
@@ -111,7 +114,7 @@
       <workItem from="1741650829186" duration="791000" />
       <workItem from="1741708854145" duration="7321000" />
       <workItem from="1741721699914" duration="307000" />
-      <workItem from="1741722015225" duration="244000" />
+      <workItem from="1741722015225" duration="2095000" />
     </task>
     <task id="LOCAL-00001" summary="feat criando projeto">
       <option name="closed" value="true" />
@@ -177,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741722119470</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chore: modificando nome da pasta para o mesmo nome do modulo">
+      <option name="closed" value="true" />
+      <created>1741722355733</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741722355733</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +226,8 @@
     <MESSAGE value="Feat: implementado EventController e EventService&#10;Refactor: Implementado Anotações de Getter, Setter e Construtores na calsse Event" />
     <MESSAGE value="Feat: Adição de funcionalidades em todas as classes do projeto" />
     <MESSAGE value="chore: juntando dois projetos em apenas uma pasta" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: juntando dois projetos em apenas uma pasta" />
+    <MESSAGE value="chore: modificando nome da pasta para o mesmo nome do modulo" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: modificando nome da pasta para o mesmo nome do modulo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
