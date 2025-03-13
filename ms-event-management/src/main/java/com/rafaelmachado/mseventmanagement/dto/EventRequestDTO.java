@@ -18,4 +18,11 @@ public class EventRequestDTO {
     private String bairro;
     private String cidade;
     private String uf;
+
+    // Construtor necessário para os testes
+    public EventRequestDTO(String eventName, LocalDateTime dateTime, String cep) {
+        this.eventName = eventName;
+        this.dateTime = dateTime;
+        this.cep = cep;
+    }
 }
