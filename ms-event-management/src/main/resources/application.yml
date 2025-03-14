@@ -1,0 +1,35 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@cluster0.zcqc3.mongodb.net/db_event?retryWrites=true&w=majority
+      database: db_event
+
+server:
+  port: 8080
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+logging:
+  level:
+    org.springframework:
+      web: DEBUG
+      data.mongodb.core: DEBUG
+    feign: DEBUG
+
+
+# Documentação OpenAPI/Swagger
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+
+# Configuração de comunicação com ms-ticket-manager
+services:
+  ticket-manager:
+    url: http://localhost:8081/api/v1
