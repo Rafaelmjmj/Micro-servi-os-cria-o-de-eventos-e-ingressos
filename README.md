@@ -15,6 +15,7 @@ O **MS Event Management** é um microsserviço responsável pela gestão de even
 - **Maven**
 - **Lombok**
 - **OpenFeign**
+- **Swagger**
 
 ## Instalação e Configuração
 ### 1. Clonar o Repositório
@@ -80,15 +81,44 @@ mvn test
 ```
 
 ## Implantando na AWS EC2
+### Configuração da AWS
+1. **Criar VPC (Virtual Private Cloud):**
+   - Acesse o console AWS e vá até **VPC**.
+   - Crie uma nova VPC com um bloco CIDR (ex: `10.0.0.0/16`).
+   - Crie uma Subnet pública (ex: `10.0.1.0/24`).
+   - Configure um Internet Gateway e associe-o à VPC.
+   - Atualize a Tabela de Rotas da VPC para direcionar o tráfego externo para o Internet Gateway.
+
+2. **Criar Security Group:**
+   - Crie um Security Group permitindo:
+     - Porta 22 (SSH) – Acesso ao seu IP.
+     - Porta 8080 – Acesso público (ou restrito, conforme necessidade).
+     - Porta 27017 – Se for necessário acessar o MongoDB remotamente.
+
+3. **Criar Key Pair SSH:**
+   - No console EC2, vá até **Key Pairs** e crie uma nova chave.
+   - Faça o download do arquivo `.pem` gerado, pois ele será necessário para conexão via SSH.
+
+4. **Criar Instância EC2:**
+   - Escolha uma AMI, como **Amazon Linux 2023** ou **Ubuntu**.
+   - Associe à VPC criada e à Subnet pública.
+   - Anexe o Security Group configurado.
+   - Escolha a Key Pair SSH criada.
+
+### Deploy do MS Event Management
 1. Gere o `.jar` do projeto:
 ```sh
 mvn package
 ```
 2. Transfira o arquivo para a EC2:
 ```sh
-scp target/ms-event-management-0.0.1-SNAPSHOT.jar ec2-user@seu-ip:/home/ec2-user/
+scp -i "sua-chave.pem" target/ms-event-management-0.0.1-SNAPSHOT.jar ec2-user@seu-ip:/home/ec2-user/
 ```
-3. Conecte-se via SSH e execute:
+3. Conecte-se via SSH na instância EC2:
+```sh
+ssh -i "sua-chave.pem" ec2-user@seu-ip
+```
+4. Execute o serviço:
 ```sh
 java -jar ms-event-management-0.0.1-SNAPSHOT.jar
 ```
@@ -166,9 +196,13 @@ mvn package
 ```
 2. Transfira o arquivo para a EC2:
 ```sh
-scp target/ms-ticket-manager-0.0.1-SNAPSHOT.jar ec2-user@seu-ip:/home/ec2-user/
+scp -i "sua-chave.pem" target/ms-ticket-manager-0.0.1-SNAPSHOT.jar ec2-user@seu-ip:/home/ec2-user/
 ```
-3. Conecte-se via SSH e execute:
+3. Conecte-se via SSH na instância EC2:
+```sh
+ssh -i "sua-chave.pem" ec2-user@seu-ip
+```
+4. Execute o serviço:
 ```sh
 java -jar ms-ticket-manager-0.0.1-SNAPSHOT.jar
 ```
